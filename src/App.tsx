@@ -328,7 +328,7 @@ const App: FC = () => {
     return (
         <>
             <h2>
-                有解的羊了个羊(DEMO) <GithubIcon />
+                Berlala Mini Game <GithubIcon />
             </h2>
             <h3>Level: {level} </h3>
 
