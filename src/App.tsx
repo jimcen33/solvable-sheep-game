@@ -10,7 +10,18 @@ import './App.css';
 import { GithubIcon } from './GithubIcon';
 import { randomString, waitTimeout } from './utils';
 
-const icons = [`🎨`, `🌈`, `⚙️`, `💻`, `📚`, `🐯`, `🐤`, `🐼`, `🐏`, `🍀`];
+const icons = [
+  'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/8146a6b2-96f6-4cff-80d8-c8a4dfced70d.%E6%B0%B4%E5%85%89%E5%94%87%E9%87%89.ico?v=1663303755311',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E4%B8%8D%E6%B2%BE%E6%9D%AF%E5%94%87%E9%87%89%20(1).ico?v=1663303805261',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E5%8D%B8%E5%A6%86%E6%B0%B4.ico?v=1663303815966',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E5%A6%86%E5%89%8D%E4%B9%B3_.ico?v=1663303823172',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E6%8C%87%E8%85%B9%E5%88%B7.ico?v=1663303832349',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E7%9C%89%E8%86%8F.ico?v=1663303844916',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E7%9C%BC%E7%BA%BF%E8%83%B6%E7%AC%94.ico?v=1663303848071',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E7%B2%89%E5%BA%95%E5%88%B7.ico?v=1663303857968',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E7%BE%8E%E7%99%BD%E5%96%B7%E9%9B%BE.ico?v=1663303874713',
+'https://cdn.glitch.global/f1687213-a0d7-4bd4-8e88-a7673ebe39c0/%E7%BE%8E%E7%99%BD%E7%B2%BE%E5%8D%8E.ico?v=1663303914070'
+];
 
 // 最大关卡
 const maxLevel = 50;
@@ -127,7 +138,7 @@ const Symbol: FC<SymbolProps> = ({ x, y, icon, isCover, status, onClick }) => {
                 className="symbol-inner"
                 style={{ backgroundColor: isCover ? '#999' : 'white' }}
             >
-                <i>{icon}</i>
+               < img src={icon} style={{ width:'100%;',height:'100%'}} />
             </div>
         </div>
     );
